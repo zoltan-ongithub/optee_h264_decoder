@@ -422,6 +422,8 @@ u32 DecodeMbPred(strmData_t *pStrmData, mbPred_t *pMbPred, mbType_e mbType,
                 return(HANTRO_NOK);
             pMbPred->intraChromaPredMode = value;
             break;
+        default:
+            break;
     }
 
     return(HANTRO_OK);

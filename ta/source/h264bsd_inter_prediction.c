@@ -901,6 +901,8 @@ u32 MvPrediction(mbStorage_t *pMb, subMbPred_t *subMbPred, u32 mbPartIdx,
         case MB_SP_4x4:
             pMb->mv[4*mbPartIdx + subMbPartIdx] = mv;
             break;
+        default:
+            break;
     }
 
     return(HANTRO_OK);
