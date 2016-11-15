@@ -1,7 +1,9 @@
 global-incdirs-y += inc \
 	../../../frameworks/av/media/libstagefright/include \
 	../../../frameworks/native/include/media/openmax \
+        android_comp/include \
 
+WARNS=1
 srcs-y += \
 	./source/h264bsd_transform.c \
 	./source/h264bsd_util.c \
