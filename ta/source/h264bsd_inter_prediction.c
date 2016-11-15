@@ -489,6 +489,9 @@ u32 h264bsdInterPrediction(mbStorage_t *pMb, macroblockLayer_t *pMbLayer,
             Motion vector prediction for 16x16 partition mode
 
 ------------------------------------------------------------------------------*/
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wcast-align"
+#pragma GCC diagnostic ignored "-Wstrict-aliasing"
 
 u32 MvPrediction16x16(mbStorage_t *pMb, mbPred_t *mbPred, dpbStorage_t *dpb)
 {
@@ -564,6 +567,7 @@ u32 MvPrediction16x16(mbStorage_t *pMb, mbPred_t *mbPred, dpbStorage_t *dpb)
     return(HANTRO_OK);
 
 }
+#pragma GCC diagnostic pop
 
 /*------------------------------------------------------------------------------
 

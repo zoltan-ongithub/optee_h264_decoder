@@ -84,8 +84,9 @@ i32 h264bsdDecodePicOrderCnt(pocStorage_t *poc, seqParamSet_t *sps,
 
     u32 i;
     i32 picOrderCnt;
-    u32 frameNumOffset, absFrameNum, picOrderCntCycleCnt;
-    u32 frameNumInPicOrderCntCycle;
+    u32 frameNumOffset, absFrameNum;
+    u32 picOrderCntCycleCnt = 0;
+    u32 frameNumInPicOrderCntCycle = 0;
     i32 expectedDeltaPicOrderCntCycle;
     u32 containsMmco5;
 

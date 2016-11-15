@@ -363,6 +363,8 @@ u32 InnerBoundaryStrength(mbStorage_t *mb1, u32 ind1, u32 ind2)
             InnerBoundaryStrength but without checking totalCoeff.
 
 ------------------------------------------------------------------------------*/
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wmissing-prototypes"
 u32 InnerBoundaryStrength2(mbStorage_t *mb1, u32 ind1, u32 ind2)
 {
     i32 tmp1, tmp2, tmp3, tmp4;
@@ -380,6 +382,7 @@ u32 InnerBoundaryStrength2(mbStorage_t *mb1, u32 ind1, u32 ind2)
     else
         return 0;
 }
+#pragma GCC diagnostic pop
 #ifndef H264DEC_OMXDL
 /*------------------------------------------------------------------------------
 

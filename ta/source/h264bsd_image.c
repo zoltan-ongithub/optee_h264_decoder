@@ -36,6 +36,8 @@
 #include "h264bsd_util.h"
 #include "h264bsd_neighbour.h"
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wcast-align"
 /*------------------------------------------------------------------------------
     2. External compiler flags
 --------------------------------------------------------------------------------
@@ -341,5 +343,6 @@ void h264bsdWriteOutputBlocks(image_t *image, u32 mbNum, u8 *data,
     }
 
 }
+#pragma GCC diagnostic pop
 #endif /* H264DEC_OMXDL */
 

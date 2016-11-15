@@ -1836,6 +1836,8 @@ void Intra4x4HorizontalUpPrediction(u8 *data, u8 *left)
 
 ------------------------------------------------------------------------------*/
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wcast-align"
 void Write4x4To16x16(u8 *data, u8 *data4x4, u32 blockNum)
 {
 
@@ -1867,6 +1869,7 @@ void Write4x4To16x16(u8 *data, u8 *data4x4, u32 blockNum)
     out32[8] = *in32++;
     out32[12] = *in32++;
 }
+#pragma GCC diagnostic pop
 
 /*------------------------------------------------------------------------------
 

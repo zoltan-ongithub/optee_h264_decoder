@@ -1002,7 +1002,6 @@ u32 h264bsdInitDpb(
     // see comment in loop below about size calculation
     if (picSizeInMbs > (UINT32_MAX - 32 - 15) / 384) {
         ALOGE("b/28533562");
-        android_errorWriteLog(0x534e4554, "28533562");
         return(MEMORY_ALLOCATION_ERROR);
     }
 
