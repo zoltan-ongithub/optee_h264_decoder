@@ -31,6 +31,7 @@ srcs-y += \
 	./source/h264bsd_pic_order_cnt.c \
 	./source/h264bsd_decoder.c \
 	./source/H264SwDecApi.c \
+	optee_ta_decoder.c \
 
 MY_ASM := \
 	./source/arm_neon_asm_gcc/h264bsdWriteMacroblock.S \
